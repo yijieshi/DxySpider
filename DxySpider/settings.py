@@ -14,7 +14,12 @@ BOT_NAME = 'DxySpider'
 SPIDER_MODULES = ['DxySpider.spiders']
 NEWSPIDER_MODULE = 'DxySpider.spiders'
 
-
+'''
+pipelines设置
+'''
+ITEM_PIPELINES = {
+    'DxySpider.pipelines.DxyspiderPipeline': 1,
+}
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'DxySpider (+http://www.yourdomain.com)'
 
